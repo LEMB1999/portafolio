@@ -1,0 +1,51 @@
+.contenedor-proyectos{
+    display: grid;
+    row-gap: 2rem;
+
+
+    @include tablet{
+        @include grid(2,2rem);
+    }
+
+    @include desktop{
+        @include grid(3,2rem);
+    }
+
+    
+}
+
+.portafolio{
+    padding-bottom: 5rem;
+}
+
+.card__imagen{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card{
+    overflow: hidden;
+    @include desktop{
+        &:last-of-type{
+            grid-column: 2/3;
+        }
+    }
+    
+    
+}
+
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 4rem;
+    padding:$separacion/2.5 0;
+    color:$colorPrimario;
+    background-color: $colorSecundario;
+    border-radius: 0 0 1rem 1rem;
+}
+
+

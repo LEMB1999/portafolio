@@ -1,0 +1,86 @@
+.sobremi{
+    padding-bottom: $separacion;
+}
+
+.seccion-titulo{
+    padding: 5rem;
+    margin:0;
+    font-family:$fuente_secundaria;
+    font-size: 4rem;
+    font-weight: bold;
+    color:$colorPrimario;
+    text-transform: uppercase;
+}
+
+.informacion{
+    width:100%;
+    margin:0 auto;
+    @include desktop{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+}
+
+.informacion__imagen{
+    border-radius:50%;
+       width: 20rem; 
+       height: 20rem;
+    @include tablet{
+        width: 30rem;
+        height: 30rem;
+    }
+    margin: 0 auto;
+}
+
+.informacion__texto{
+    p{
+        font-family: $fuente_principal;
+        text-align: center;
+    }
+    span{
+        color:$colorPrimario;
+    }
+}
+
+
+
+.tecnologias h3{
+    color:$colorPrimario;
+    text-transform: uppercase;
+}
+
+.imagenes{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        width: 10rem;
+        margin-right:2rem;
+        &:last-of-type{
+            margin-right:0;
+        }
+    }
+    @include tablet{
+        flex-wrap: nowrap;
+    }
+
+}
+
+.dos-columnas{
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.aumentar-imagen  img{
+
+    width: 15rem;
+    margin-top:-35px;
+    border-radius: 10px;
+}
+

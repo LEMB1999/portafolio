@@ -1,0 +1,98 @@
+video{
+    display: block;
+    width:100%;
+    height:100%;
+}
+
+.contactame{
+    position: relative;
+    max-height: 50rem;
+    overflow: hidden;
+}
+
+.overlay{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.5rem;
+
+    h3{
+        padding:1rem 0;
+
+        @include tablet{
+            padding:5rem;
+        }
+    }
+
+
+    
+    
+}
+
+
+.contactos{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+
+    img{
+        width: 5rem;
+        cursor: pointer;
+        
+        @include tablet{
+            width:10rem;
+        } 
+        
+    }
+
+    div{
+            margin-right: 2.5rem;
+            &:last-of-type{
+                margin-right:0;
+            }
+    }
+
+    span{
+        font-weight: bold;
+        position: absolute;
+        color:$blanco;
+        font-size: 1.2rem;
+        visibility: hidden;
+        opacity:1;
+        transition:visibility 0.5s linear, opacity 0.5s linear;
+
+        @include tablet{
+            font-size: 2.5rem;
+        }
+    }
+
+}
+
+.info-1:first-child{
+    margin-left: -1rem;
+    margin-top:-2rem;
+
+   @include tablet{
+    margin-left: -2rem;
+    margin-top:-5rem;
+   }
+
+}
+
+.info-2:first-child{
+
+    margin-top:-2rem;
+    margin-left: -6rem;
+
+    @include tablet{
+        margin-top:-5rem;
+        margin-left: -10rem;
+    }
+}

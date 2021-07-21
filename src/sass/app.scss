@@ -1,0 +1,16 @@
+
+/* Base*/
+@import 'base/normalizer';
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@400;700&display=swap');
+@import 'base/variables';
+@import 'base/globales';
+@import 'base/mixins';
+@import 'base/utiliades';
+
+/* Layout */
+
+@import 'layout/inicio';
+@import 'layout/sobre-mi';
+@import 'layout/portafolio';
+@import 'layout/contactame';
+@import 'layout/apps';
