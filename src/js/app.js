@@ -69,8 +69,8 @@ function mostarInfo(){
 
 
 function scrollNav(){
-    const enlaces = document.querySelectorAll('.navegacion a')
-
+    const enlaces = document.querySelectorAll('.navegacion interno')
+    
     enlaces.forEach( element =>{
        element.addEventListener("click",(event)=>{
            event.preventDefault();
